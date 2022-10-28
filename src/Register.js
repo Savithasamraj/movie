@@ -32,7 +32,7 @@ function Login() {
     },
     onSubmit:async (values) => {
       try {
-        const login = await axios.post("https://serverr1234.herokuapp.com/", values);
+        const login = await axios.post("https://serverr1234.herokuapp.com/register", values);
         localStorage.setItem("react_app_token", login.data.token);
         
     
